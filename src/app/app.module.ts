@@ -12,6 +12,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { FooterComponent } from './footer/footer.component';
 import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
+import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
     ContentComponent,
     MenuComponent,
     FooterComponent,
-    ComoFuncionaComponent
+    ComoFuncionaComponent,
+    IniciarSesionComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
     CarouselModule.forRoot(),
     RouterModule.forRoot([
       { path: 'home', component: ContentComponent },
-      { path: 'como-funciona', component: ContentComponent },
+      { path: 'como-funciona', component: ComoFuncionaComponent },
+      { path: 'iniciar-sesion', component: IniciarSesionComponent },
       //{ path: 'register', component: "<p>Registrese</p>" },
       //{ path: 'login', component: "<p>Iniciar sesion</p>" },
       { path: '', redirectTo: '/home', pathMatch: 'full' }
