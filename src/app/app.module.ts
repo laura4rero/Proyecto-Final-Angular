@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,14 +31,6 @@ import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.componen
     TabsModule.forRoot(),
     ButtonsModule.forRoot(),
     CarouselModule.forRoot(),
-    RouterModule.forRoot([
-      { path: 'home', component: ContentComponent },
-      { path: 'como-funciona', component: ComoFuncionaComponent },
-      { path: 'iniciar-sesion', component: IniciarSesionComponent },
-      //{ path: 'register', component: "<p>Registrese</p>" },
-      //{ path: 'login', component: "<p>Iniciar sesion</p>" },
-      { path: '', redirectTo: '/home', pathMatch: 'full' }
-    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
