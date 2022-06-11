@@ -12,6 +12,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { FooterComponent } from './footer/footer.component';
 import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
+import { RegistreseComponent } from './registrese/registrese.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.componen
     MenuComponent,
     FooterComponent,
     ComoFuncionaComponent,
-    IniciarSesionComponent
+    IniciarSesionComponent,
+    RegistreseComponent
   ],
   imports: [
     BrowserModule,
