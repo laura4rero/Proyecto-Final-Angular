@@ -6,6 +6,7 @@ import { ContentComponent } from './content/content.component';
 import { RegistreseComponent } from './registrese/registrese.component';
 import { TerminosDeUsoComponent } from './terminos-de-uso/terminos-de-uso.component';
 import { PoliticasDePrivacidadComponent } from './politicas-de-privacidad/politicas-de-privacidad.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 const routes: Routes = 
 [
@@ -15,6 +16,7 @@ const routes: Routes =
   { path: 'registrese', component: RegistreseComponent },
   { path: 'terminos-de-uso', component: TerminosDeUsoComponent },
   { path: 'politicas-de-privacidad', component: PoliticasDePrivacidadComponent },
+  { path: 'contacto', component: ContactoComponent },
   
   
   

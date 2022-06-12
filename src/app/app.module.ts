@@ -15,6 +15,7 @@ import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.componen
 import { RegistreseComponent } from './registrese/registrese.component';
 import { TerminosDeUsoComponent } from './terminos-de-uso/terminos-de-uso.component';
 import { PoliticasDePrivacidadComponent } from './politicas-de-privacidad/politicas-de-privacidad.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { PoliticasDePrivacidadComponent } from './politicas-de-privacidad/politi
     IniciarSesionComponent,
     RegistreseComponent,
     TerminosDeUsoComponent,
-    PoliticasDePrivacidadComponent
+    PoliticasDePrivacidadComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
