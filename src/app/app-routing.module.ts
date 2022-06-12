@@ -4,6 +4,7 @@ import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { ContentComponent } from './content/content.component';
 import { RegistreseComponent } from './registrese/registrese.component';
+import { TerminosDeUsoComponent } from './terminos-de-uso/terminos-de-uso.component';
 
 const routes: Routes = 
 [
@@ -11,6 +12,8 @@ const routes: Routes =
   { path: 'como-funciona', component: ComoFuncionaComponent },
   { path: 'iniciar-sesion', component: IniciarSesionComponent },
   { path: 'registrese', component: RegistreseComponent },
+  { path: 'terminos-de-uso', component: TerminosDeUsoComponent },
+  
   
   //{ path: 'register', component: "<p>Registrese</p>" },
   //{ path: 'login', component: "<p>Iniciar sesion</p>" },

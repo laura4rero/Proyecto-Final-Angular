@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { RegistreseComponent } from './registrese/registrese.component';
+import { TerminosDeUsoComponent } from './terminos-de-uso/terminos-de-uso.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { RegistreseComponent } from './registrese/registrese.component';
     FooterComponent,
     ComoFuncionaComponent,
     IniciarSesionComponent,
-    RegistreseComponent
+    RegistreseComponent,
+    TerminosDeUsoComponent
   ],
   imports: [
     BrowserModule,
