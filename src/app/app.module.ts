@@ -14,6 +14,7 @@ import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { RegistreseComponent } from './registrese/registrese.component';
 import { TerminosDeUsoComponent } from './terminos-de-uso/terminos-de-uso.component';
+import { PoliticasDePrivacidadComponent } from './politicas-de-privacidad/politicas-de-privacidad.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { TerminosDeUsoComponent } from './terminos-de-uso/terminos-de-uso.compon
     ComoFuncionaComponent,
     IniciarSesionComponent,
     RegistreseComponent,
-    TerminosDeUsoComponent
+    TerminosDeUsoComponent,
+    PoliticasDePrivacidadComponent
   ],
   imports: [
     BrowserModule,
