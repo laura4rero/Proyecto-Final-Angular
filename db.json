@@ -6,6 +6,16 @@
       "lastname": "Rodriguez",
       "email": "juan@nn.com",
       "username": "juan1"
+    },
+    {
+      "name": "Camilo",
+      "lastname": "Forero",
+      "email": "ka@hotmail.com",
+      "username": "Camilo1",
+      "password": "Camilos1",
+      "repeatpassword": "Camilos1",
+      "registercheck": false,
+      "id": 2
     }
   ]
 }

@@ -1,6 +1,8 @@
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { DbserviceService } from '../service/dbservice.service';
+import { Router } from "@angular/router"
+
 
 @Component({
   selector: 'app-registrese',
@@ -9,11 +11,12 @@ import { DbserviceService } from '../service/dbservice.service';
 })
 export class RegistreseComponent implements OnInit {
 
-  constructor(private serviceRegister: DbserviceService) { }
+  constructor(private serviceRegister: DbserviceService, private router: Router) { }
 
   ngOnInit(): void {}
 
   boolregister: boolean = false;
+  booltestpass: boolean = false;
 
   registerForm = new FormGroup(
   {
@@ -21,23 +24,37 @@ export class RegistreseComponent implements OnInit {
     lastname: new FormControl('', [Validators.required, Validators.minLength(2)]),
     email: new FormControl('', [Validators.required, Validators.email]),
     username: new FormControl('', [Validators.required, Validators.pattern('^(?=.*[0-9]).*$')]),
-    password: new FormControl('', [Validators.required, Validators.pattern('^(?=.*[0-9]).*$')]),
-    repeatpassword: new FormControl('', [Validators.required, Validators.pattern('^(?=.*[0-9]).*$')])
+    password: new FormControl('', [Validators.required, Validators.pattern('^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\\d).*$')]),
+    repeatpassword: new FormControl('', [Validators.required, Validators.pattern('^(?=.{8,})(?=.*[a-zA-Z])(?=.*\\d).*$')]),
+    registercheck: new FormControl(null, [Validators.required])
   });
+
+  testSamePassword=():void=>
+  {
+    let passval: string = this.registerForm.controls['password'].value
+    let passreptval: string = this.registerForm.controls['repeatpassword'].value
+
+    if(passval == passreptval)
+    {
+      this.booltestpass = true;
+    }
+    else
+    {
+      this.booltestpass = false;
+      this.registerForm.setErrors({'samepassword': false});
+    };
+  }
 
   enviar=(): void=>
   {
-    //console.log(this.registerForm.value);
-    //console.log('hehe', this.registerForm, this.registerForm.controls['username'].errors);
-    /*this.serviceRegister.getUser().forEach((user)=>
+    if(this.registerForm.status == 'VALID')
     {
-      console.log(user);
-    });*/
-
-    this.serviceRegister.postUser(this.registerForm.value).forEach((user)=>
-    {
-      console.log(user);
-      this.boolregister = true;
-    });
+      this.serviceRegister.postUser(this.registerForm.value).forEach((user)=>
+      {
+        console.log(user);
+        this.boolregister = true;
+        this.router.navigate(['/home']);
+      });
+    }
   }
 }
