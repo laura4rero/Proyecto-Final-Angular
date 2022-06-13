@@ -16,6 +16,11 @@ import { RegistreseComponent } from './registrese/registrese.component';
 import { TerminosDeUsoComponent } from './terminos-de-uso/terminos-de-uso.component';
 import { PoliticasDePrivacidadComponent } from './politicas-de-privacidad/politicas-de-privacidad.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { DbserviceService } from './service/dbservice.service';
+import { AccountComponent } from './account/account.component';
+
 
 
 @NgModule({
@@ -29,9 +34,12 @@ import { ContactoComponent } from './contacto/contacto.component';
     RegistreseComponent,
     TerminosDeUsoComponent,
     PoliticasDePrivacidadComponent,
-    ContactoComponent
+    ContactoComponent,
+    AccountComponent
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -39,8 +47,9 @@ import { ContactoComponent } from './contacto/contacto.component';
     TabsModule.forRoot(),
     ButtonsModule.forRoot(),
     CarouselModule.forRoot(),
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [DbserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

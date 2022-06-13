@@ -7,8 +7,9 @@ import { RegistreseComponent } from './registrese/registrese.component';
 import { TerminosDeUsoComponent } from './terminos-de-uso/terminos-de-uso.component';
 import { PoliticasDePrivacidadComponent } from './politicas-de-privacidad/politicas-de-privacidad.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { AccountComponent } from './account/account.component';
 
-const routes: Routes = 
+const routes: Routes =
 [
   { path: 'home', component: ContentComponent },
   { path: 'como-funciona', component: ComoFuncionaComponent },
@@ -17,9 +18,10 @@ const routes: Routes =
   { path: 'terminos-de-uso', component: TerminosDeUsoComponent },
   { path: 'politicas-de-privacidad', component: PoliticasDePrivacidadComponent },
   { path: 'contacto', component: ContactoComponent },
-  
-  
-  
+  { path: 'account', component: AccountComponent },
+
+
+
   //{ path: 'register', component: "<p>Registrese</p>" },
   //{ path: 'login', component: "<p>Iniciar sesion</p>" },
   { path: '', redirectTo: '/home', pathMatch: 'full' }

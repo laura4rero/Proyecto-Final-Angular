@@ -1,6 +1,11 @@
 {
-  "users":
-  [
-    {"password": "123", "user":"admin"}
+  "users": [
+    {
+      "id": 1,
+      "name": "Juan",
+      "lastname": "Rodriguez",
+      "email": "juan@nn.com",
+      "username": "juan1"
+    }
   ]
 }
