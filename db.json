@@ -57,6 +57,16 @@
       "repeatpassword": "jaime12345",
       "registercheck": true,
       "id": 7
+    },
+    {
+      "name": "juan sebastian",
+      "lastname": "ruiz",
+      "email": "juan@hotmail.com",
+      "username": "juan23",
+      "password": "juan123456",
+      "repeatpassword": "juan123456",
+      "registercheck": true,
+      "id": 8
     }
   ]
 }

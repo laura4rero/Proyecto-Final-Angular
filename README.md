@@ -1,27 +1,44 @@
-# Test2
+# Proyecto Final Food Cupons
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0.
+Este proyecto consiste en una aplicación full stack construida con el stack MEAN (Mongo, Express, Angular, Node).
 
-## Development server
+## Requerimientos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para ejecutar este proyecto en su local asegurese de:
 
-## Code scaffolding
+1.Tener NodeJS instalado
+2.Debe tener una base de datos MongoDB habilitada y configurar la ruta de acceso en una variable de entorno con el nombre ".env". Ver archivo de ejemplo ".env-EXAMPLE".
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instrucciones
 
-## Build
+Clonar repositorio https://github.com/laura4rero/Proyecto-Final-Angular
+Una vez clonado el repositorio en su local, debe abrir 3 terminales y ejecutar lo siguiente
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Terminal 1
+  $ cd frontend
+  $ npm install
+  $ ng serve
 
-## Running unit tests
+Terminal 2
+  $ cd todosBackend
+  $ npm install
+  $ npm run dev
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Terminal 3
+  $ cd usersBackend
+  $ npm install
+  $ npm run dev
 
-## Running end-to-end tests
+Asegurese de no tener ningún error en cada una de las tres terminales.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Abra un navegador web e ingrese a: http://localhost:4200
+Navegue por el sitio
 
-## Further help
+Para acceder al contenido "Privado" primero debe registrarse y luego iniciar sesión.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+En la zona de contenido "Privado" podrá ejecutar operaciones CRUD acerca de una lista de tareas.
+
+
+## Autora
+
+Laura Forero
