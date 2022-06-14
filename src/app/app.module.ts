@@ -20,6 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DbserviceService } from './service/dbservice.service';
 import { AccountComponent } from './account/account.component';
+import { CuponesComponent } from './cupones/cupones.component';
 
 
 
@@ -35,7 +36,8 @@ import { AccountComponent } from './account/account.component';
     TerminosDeUsoComponent,
     PoliticasDePrivacidadComponent,
     ContactoComponent,
-    AccountComponent
+    AccountComponent,
+    CuponesComponent
   ],
   imports: [
     FormsModule,

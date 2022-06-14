@@ -53,7 +53,7 @@ export class RegistreseComponent implements OnInit {
       {
         console.log(user);
         this.boolregister = true;
-        this.router.navigate(['/home']);
+        this.router.navigate(['/account']);
       });
     }
   }

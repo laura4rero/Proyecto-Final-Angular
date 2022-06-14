@@ -8,6 +8,7 @@ import { TerminosDeUsoComponent } from './terminos-de-uso/terminos-de-uso.compon
 import { PoliticasDePrivacidadComponent } from './politicas-de-privacidad/politicas-de-privacidad.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { AccountComponent } from './account/account.component';
+import { CuponesComponent } from './cupones/cupones.component';
 
 const routes: Routes =
 [
@@ -19,7 +20,7 @@ const routes: Routes =
   { path: 'politicas-de-privacidad', component: PoliticasDePrivacidadComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'account', component: AccountComponent },
-
+  { path: 'cupones', component: CuponesComponent },
 
 
   //{ path: 'register', component: "<p>Registrese</p>" },

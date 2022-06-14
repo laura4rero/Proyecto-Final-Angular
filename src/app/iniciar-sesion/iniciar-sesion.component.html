@@ -13,7 +13,20 @@
             class="form-control"
             style="border-color:#595661;"
             formControlName="email"
+            [ngClass]="{'is-invalid': this.loginForm.controls['email'].invalid}"
           >
+          <div
+            *ngIf="this.loginForm.controls['email'].touched && this.loginForm.controls['email'].errors?.['required']"
+            class="text-danger"
+          >
+            Campo requerido
+          </div>
+          <div
+            *ngIf="this.loginForm.controls['email'].touched && this.loginForm.controls['email'].errors?.['email']"
+            class="text-danger"
+          >
+            El correo debe tener el formato correcto
+          </div>
         </div>
         <label for="inputPassword5" class="col-sm-10 col-form-label">Contraseña</label>
         <div class="col-md-6 mb-3">
@@ -22,10 +35,13 @@
             class="form-control"
             style="border-color:#595661 ;"
             formControlName="password"
+            [ngClass]="{'is-invalid': this.loginForm.controls['email'].invalid}"
           >
-          <small id="passwordHelpBlock" class="form-text text-muted">
-              Su contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener espacios, caracteres especiales ni emoji.
-          </small>
+          <div
+            *ngIf="this.loginForm.controls['password'].touched && this.loginForm.controls['password'].errors?.['required']"
+            class="text-danger">
+            Campo requerido
+          </div>
         </div>
       </div>
       <div class="col-sm-10" >
@@ -51,6 +67,11 @@
         <label class="form-check-label" for="invalidCheck">
           Acepto terminos y condiciones
         </label>
+        <div
+          *ngIf="this.loginForm.controls['logincheck'].touched && this.loginForm.controls['logincheck'].errors?.['required']"
+          class="text-danger">
+          Campo requerido
+        </div>
       </div>
       <br>
       <div class="col-sm-10">
@@ -64,6 +85,15 @@
         </button>
       </div>
     </form>
+    <br>
+    <div
+      class="alert alert-danger"
+      role="alert"
+      style="width: 20rem;"
+      *ngIf="dbBoolean != false"
+      >
+       Usuario o contraseña invalidos!
+    </div>
     <br>
     <small id="passwordHelpBlock" class="form-text text-muted" >
       ¿Ya tienes una cuenta? <a class="nav-link" routerLink="/iniciar-sesion" routerLinkActive="active">Inicia Sesion</a>

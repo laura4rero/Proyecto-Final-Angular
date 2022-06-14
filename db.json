@@ -16,6 +16,47 @@
       "repeatpassword": "Camilos1",
       "registercheck": false,
       "id": 2
+    },
+    {
+      "email": "ka@hotmail.com",
+      "password": "Camilos1",
+      "remembercheck": null,
+      "logincheck": true,
+      "id": 3
+    },
+    {
+      "email": "ka@hotmail.com",
+      "password": "Camilos1",
+      "remembercheck": null,
+      "logincheck": true,
+      "id": 4
+    },
+    {
+      "email": "ka@hotmail.com",
+      "password": "Camilos1",
+      "remembercheck": null,
+      "logincheck": true,
+      "id": 5
+    },
+    {
+      "name": "eugenio",
+      "lastname": "forero",
+      "email": "eugenio@gmail.com",
+      "username": "eugenio1",
+      "password": "12345678a",
+      "repeatpassword": "12345678a",
+      "registercheck": true,
+      "id": 6
+    },
+    {
+      "name": "jaime",
+      "lastname": "garcia",
+      "email": "jaime@gmail.com",
+      "username": "jaime1",
+      "password": "jaime12345",
+      "repeatpassword": "jaime12345",
+      "registercheck": true,
+      "id": 7
     }
   ]
 }

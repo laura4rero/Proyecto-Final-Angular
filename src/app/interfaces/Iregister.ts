@@ -4,4 +4,5 @@ export interface FormRegister
   lastname: string;
   email: string;
   username: string;
+  password:string;
 }
